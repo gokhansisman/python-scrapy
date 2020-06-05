@@ -10,6 +10,7 @@ import scrapy
 
 class Scrapy2Item(scrapy.Item):
     # define the fields for your item here like:
-    title = scrapy.Field()
+    id=scrapy.Field()
+    quote = scrapy.Field()
     author = scrapy.Field()
-    tag = scrapy.Field()
+    tags = scrapy.Field()
