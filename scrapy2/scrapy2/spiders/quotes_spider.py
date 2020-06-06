@@ -11,8 +11,8 @@ class QuoteSpider(scrapy.Spider):
     def parse(self,response):
         
         items = Scrapy2Item()
-        items2 = Scrapy2Item()
         all_div_quotes= response.css('div.quote')
+        
         
         for quotes in all_div_quotes:
 
